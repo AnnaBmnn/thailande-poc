@@ -17,3 +17,10 @@ body
     left: 0;
     outline: none;
 }
+
+button {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 2;
+}

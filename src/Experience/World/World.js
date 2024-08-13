@@ -4,6 +4,8 @@ import Environment from './Environment.js'
 // import Fox from './Fox.js'
 import Mask from './Mask.js'
 import Plans from './Plans.js'
+import Audio from './Audio.js'
+
 
 
 export default class World
@@ -22,6 +24,7 @@ export default class World
             // this.fox = new Fox()
             this.mask = new Mask()
             this.plans = new Plans()
+            this.audio = new Audio()
 
             this.environment = new Environment()
         })
@@ -30,8 +33,10 @@ export default class World
     update()
     {
         if(this.mask)
-            // this.mask.update()
+            this.mask.update()
         if(this.plans)
             this.plans.update()
+        if(this.audio)
+            this.audio.update()
     }
 }

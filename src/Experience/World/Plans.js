@@ -9,6 +9,7 @@ export default class Plans
         this.scene = this.experience.scene
         this.resources = this.experience.resources
         this.time = this.experience.time
+        this.audio = this.experience.world.audio
         this.textures = [
             this.resources.items.picture1Texture,
             this.resources.items.picture2Texture,

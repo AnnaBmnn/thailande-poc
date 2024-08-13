@@ -42,6 +42,11 @@ export default class Mask
 
     update()
     {
-        this.model.rotation.y += 0.001
+        if(this.experience){
+            let _scale = this.experience.world.audio.frequenceAverage * 0.005
+            this.model.scale.set(_scale, _scale, _scale)
+
+        }
+
     }
 }
